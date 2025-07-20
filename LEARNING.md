@@ -18,8 +18,10 @@
 6. Basic Structure of HTML
 - head, body
 7. Basic tags, Styling, Debugging
-- tag? types of tags
+- tag? types of tags  "heart of html"
 - attribute
 - element, content
 - Debugging
-8. Basic tags, Styling, Debugging
+- Comment
+8. Headings, Paragraphs, Line breaks horizontal rule
+9.  Semantic vs. Non-semantic HTML
