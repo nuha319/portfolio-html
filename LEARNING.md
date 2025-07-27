@@ -52,3 +52,12 @@ normal text <br/>
     <del>deleted text</del> <br/>
     (a+b)<sup>2</sup> <!--power-->
     H<sub>2</sub>O
+
+# Intermediate HTML
+- Meta tag & SEO meta used in head tag:to help SEO= search enigine optimization- so that searching our page gets easy
+- Adding font-awesome icons and google font
+- advanced table
+- advanced form
+- form data send to your email
+- multimedia
+- html5 elements

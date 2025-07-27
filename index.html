@@ -3,32 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!--supports the older vesion of internet explorer-->
+    <meta name="author" content="Nuha Najibah"/>
+    <meta name="keywords" content="portfolio, html, Nuha, Nuha Najibah">
+    <meta name="description" content="Nuha Najibah is in search of jobs.">
     <title>My Portfolio</title>
-</head>
-<body>
-    <!--Section:navbar-->
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contacts">Contact Me</a></li>
-            
-        </ul>
-    </nav>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-     <!--Section:intro-->
-    <header id="intro">
-        <h1>Nuha Najibah</h1>
-        <a target="_blank" href="https://youtu.be/VzrrcTxg9-A"><img src="images/Nuha.jpeg" alt="Nuha Najibah" height="200px"></a>
-        <p>Web developer</p> <hr/>
+    <style>
+        body {
+            background-color: rgb(50, 197, 165);
+            font-family: "Roboto", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Section:navbar-->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contacts">Contact Me</a></li>
+            </ul>
+        </nav>
     </header>
+
+    <main>
+        <!--Section:intro-->
+    <section id="intro">
+        <h1>Nuha Najibah</h1>
+        <p>
+            I am a fresh <em>CSE Graduate</em> looking for internships as a <strong>Web Developer</strong>.
+        </p>
+        <a target="_blank" href="https://youtu.be/VzrrcTxg9-A"><img src="images/Nuha.jpeg" alt="Nuha Najibah" height="200px"></a>
+        <hr/>
+    </section>
 
     <!--Section: About me-->
     <section id="about">
         <h2>About Me</h2>
         <p>I am a Computer Science and Engineering Graduate who is currently looking for internships. </p>
         <p><strong>Education:</strong> B.Sc. in Computer Science and Engineering</p>
+    </section>
+
+    <!--Section:skills-->
+    <section id="skills">
+        <h2>Skills</h2>
 
         <table border="1" cellpadding="5" cellspacing="0">
             <thead>
@@ -39,31 +68,41 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>Technology</td>
-                    <td>Proficiency</td>
+                    <td>HTML</td>
+                    <td rowspan="2">Expert</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>Express.js</td>
+                    <td rowspan="2">Still Learning</td>
+                </tr>
+                <tr>
+                    <td>Node.js</td>
                 </tr>
             </tbody>
         </table>
+
+        <div>
+            <h3>Skill Progress</h3>
+            <label for="htmlProgress">HTML:</label>
+            <progress id="htmlProgress" value="90" max="100"></progress>
+
+            <div>
+                <label for="cssProgress">CSS:</label>
+                <meter id="cssProgress" value="90" max="100">90%</meter>
+            </div>
+
+        </div>
+
     </section>
 
-    <!--Section:skills-->
-    <section id="skills">
-        <h2>Skills</h2>
-        <ol type="a">
-            <li>HTML</li>
-            <ol>
-                <li>CSS</li>
-            <li>JavaScript</li>
-            </ol>
-        </ol>
-
-        <ul type="dot">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-        </ul>
-    </section>
-
+    <!--Section:projects-->
     <section id="projects">
         <h2>Projects</h2>
         <ol>
@@ -73,10 +112,14 @@
         </ol>
     </section>
 
+    <video width="350px" controls>
+        <source src="assets/videos/hudai.mkv" type="video/mp4"/>
+    </video>
+
     <!--Section:contacts-->
     <section id="contacts">
         <h2>Contact Me</h2>
-        <form>
+        <form action="https://formspree.io/f/movlwvjb" method="POST"> <!--action redirects responses to my email and method=POST helps to send data to the endpoint-->
            <div>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required/>
@@ -85,6 +128,29 @@
            <div>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required/>
+           </div>
+
+           <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="18" max="55"/>
+           </div>
+
+           <div>
+            <label for="website">Website:</label>
+            <input type="url" id="website" name="website" patter="https?://"/>
+           </div>
+
+           <div>
+            <label for="image">Image:</label>
+            <input type="file" id="image" name="image" accept="image/*"/>
+           </div>
+
+           <div>
+            <label for="subject">Subject:</label>
+            <select name="subject" id="subject">
+                <option value="inquiry">Inquiry</option>
+                <option value="job">Job Offer</option>
+            </select>
            </div>
 
            <div>
@@ -97,12 +163,27 @@
         </form>
     </section>
 
-    <!--Section:footer-->
+    </main>
+
+    <!--footer-->
     <footer>
         <p>Copyright reserved by &copy; Nuha</p>
         <p>Lots of &hearts;</p>
         <a href="tel:01924415008">Call me</a>
         <a target="_blank" href="mailto:nuhaamerica2001@gmail.com">Email Me</a>
+
+        <h3>Follow Me</h3>
+        <ul>
+            <li>
+                <a target="_blank" href="https://www.facebook.com/nuha.najibah.9/"><i class="fa-brands fa-facebook"></i>Visit my facebook page</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/nuha-najibah-8b0796266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i>LinkedIn Profile</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://github.com/nuha319"><i class="fa-brands fa-github"></i>GitHub Profile</a>
+            </li>
+        </ul>
     </footer>
 
 </body>
