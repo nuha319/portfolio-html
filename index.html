@@ -6,10 +6,104 @@
     <title>My Portfolio</title>
 </head>
 <body>
+    <!--Section:navbar-->
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contacts">Contact Me</a></li>
+            
+        </ul>
+    </nav>
+
      <!--Section:intro-->
-    <header>
+    <header id="intro">
         <h1>Nuha Najibah</h1>
+        <a target="_blank" href="https://youtu.be/VzrrcTxg9-A"><img src="images/Nuha.jpeg" alt="Nuha Najibah" height="200px"></a>
         <p>Web developer</p> <hr/>
     </header>
+
+    <!--Section: About me-->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a Computer Science and Engineering Graduate who is currently looking for internships. </p>
+        <p><strong>Education:</strong> B.Sc. in Computer Science and Engineering</p>
+
+        <table border="1" cellpadding="5" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Technology</th>
+                    <th>Proficiency</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Technology</td>
+                    <td>Proficiency</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!--Section:skills-->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ol type="a">
+            <li>HTML</li>
+            <ol>
+                <li>CSS</li>
+            <li>JavaScript</li>
+            </ol>
+        </ol>
+
+        <ul type="dot">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ol>
+            <li><a target="_blank" href="https://github.com/nuha319/portfolio-html">portfolio website</a></li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ol>
+    </section>
+
+    <!--Section:contacts-->
+    <section id="contacts">
+        <h2>Contact Me</h2>
+        <form>
+           <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required/>
+           </div>
+
+           <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required/>
+           </div>
+
+           <div>
+            <label for="messsage">Message:</label>
+            <textarea name="message" id="message" cols="20" rows="10"></textarea>
+           </div>
+
+           <button type="submit">Submit</button>
+           <button type="reset">Clear</button>
+        </form>
+    </section>
+
+    <!--Section:footer-->
+    <footer>
+        <p>Copyright reserved by &copy; Nuha</p>
+        <p>Lots of &hearts;</p>
+        <a href="tel:01924415008">Call me</a>
+        <a target="_blank" href="mailto:nuhaamerica2001@gmail.com">Email Me</a>
+    </footer>
+
 </body>
 </html>

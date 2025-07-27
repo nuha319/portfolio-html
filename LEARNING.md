@@ -24,4 +24,31 @@
 - Debugging
 - Comment
 8. Headings, Paragraphs, Line breaks horizontal rule
-9.  Semantic vs. Non-semantic HTML
+9.  Semantic HTML vs. Non-semantic HTML
+- semantic: header, footer, main, form, table (try to  use these always), section
+- non: div, span
+
+<div></div> used to divide sections
+<header></header> used for heading
+
+10. Text formatting tags
+11. Entity 
+12. List
+- ordered list, unordered, definition, nested
+13. Link and Navigation
+- absolut link vs relative link
+-a tag, attributes: href, target, title
+14. Image
+15. Basic Table
+16. Basic Form
+17. Deploy
+
+
+
+normal text <br/>
+    <strong>normal text</strong> <br/>
+    <em>italic</em> <br/>
+    <mark>highlight</mark> <br/>
+    <del>deleted text</del> <br/>
+    (a+b)<sup>2</sup> <!--power-->
+    H<sub>2</sub>O
